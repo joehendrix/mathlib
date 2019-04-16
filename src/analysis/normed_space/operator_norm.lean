@@ -12,7 +12,7 @@ particular
 (*) define the operator norm and show that it induces the structure of a normed space
     on bounded linear maps.
 -/
-import algebra.module
+import algebra.module linear_algebra.basic
 import analysis.normed_space.bounded_linear_maps
 import topology.metric_space.lipschitz
 
