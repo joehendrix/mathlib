@@ -8,7 +8,7 @@ Theory of ordered topology.
 import order.liminf_limsup
 import data.set.intervals
 import topology.algebra.group
-import topology.constructions -- topology.uniform_space.uniform_embedding
+import topology.constructions
 
 open classical set lattice filter topological_space
 local attribute [instance] classical.prop_decidable
