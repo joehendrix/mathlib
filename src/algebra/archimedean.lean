@@ -8,6 +8,10 @@ Archimedean groups and fields.
 import algebra.group_power algebra.field_power
 import data.rat tactic.linarith tactic.abel
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
+
 local infix ` • ` := add_monoid.smul
 
 variables {α : Type*}

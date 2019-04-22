@@ -14,6 +14,9 @@ Note: power adopts the convention that 0^0=1.
 import algebra.char_zero algebra.group algebra.ordered_field
 import data.int.basic data.list.basic
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+
 universes u v
 variable {α : Type u}
 

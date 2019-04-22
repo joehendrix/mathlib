@@ -7,6 +7,8 @@ Theory of univariate polynomials, represented as `ℕ →₀ α`, where α is a 
 -/
 import data.finsupp algebra.gcd_domain ring_theory.euclidean_domain tactic.ring ring_theory.multiplicity
 
+local attribute [instance, priority 0] nat.cast_coe
+
 /-- `polynomial α` is the type of univariate polynomials over `α`.
 
 Polynomials should be seen as (semi-)rings with the additional constructor `X`.

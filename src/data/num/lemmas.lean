@@ -8,6 +8,11 @@ Properties of the binary representation of integers.
 import data.num.basic data.num.bitwise algebra.ordered_ring
        tactic.interactive data.int.basic data.nat.gcd
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] pos_num_coe
+local attribute [instance, priority 0] num_nat_coe
+
 namespace pos_num
   variables {α : Type*}
 

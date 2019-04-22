@@ -7,6 +7,9 @@ Nonnegative real numbers.
 -/
 import data.real.basic order.lattice algebra.field
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
+
 noncomputable theory
 open lattice
 

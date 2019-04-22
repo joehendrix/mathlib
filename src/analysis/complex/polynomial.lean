@@ -7,6 +7,8 @@ import data.polynomial topology.instances.polynomial analysis.complex.exponentia
 
 open complex polynomial metric filter is_absolute_value set lattice
 
+local attribute [instance, priority 0] nat.cast_coe
+
 namespace complex
 
 lemma exists_forall_abs_polynomial_eval_le (p : polynomial ℂ) :

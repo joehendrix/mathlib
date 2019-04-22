@@ -5,6 +5,9 @@ Author: Chris Hughes
 -/
 import data.int.modeq data.int.gcd data.fintype data.pnat
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+
 open nat nat.modeq int
 
 def zmod (n : ℕ+) := fin n

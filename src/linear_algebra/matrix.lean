@@ -10,6 +10,7 @@ import linear_algebra.dimension linear_algebra.tensor_product
 noncomputable theory
 
 local attribute [instance, priority 0] classical.prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
 
 open lattice set linear_map submodule
 

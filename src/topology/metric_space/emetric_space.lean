@@ -21,6 +21,8 @@ import topology.uniform_space.separation topology.uniform_space.uniform_embeddin
 open lattice set filter classical
 noncomputable theory
 
+local attribute [instance, priority 0] nat.cast_coe
+
 local notation `𝓤` := uniformity
 
 universes u v w

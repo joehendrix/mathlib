@@ -4,6 +4,8 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Mario Carneiro
 -/
 import data.int.basic algebra.associated data.nat.gcd
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
 
 /-- The ring of integers adjoined with a square root of `d`.
   These have the form `a + b √d` where `a b : ℤ`. The components

@@ -9,6 +9,9 @@ Define the p-adic valuation on ℤ and ℚ, and the p-adic norm on ℚ
 import data.rat algebra.gcd_domain algebra.field_power
 import ring_theory.multiplicity tactic.ring
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+
 universe u
 
 open nat

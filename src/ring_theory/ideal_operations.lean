@@ -11,6 +11,8 @@ import linear_algebra.tensor_product
 import data.equiv.algebra
 import ring_theory.algebra_operations
 
+local attribute [instance, priority 0] nat.cast_coe
+
 universes u v w x
 
 open lattice

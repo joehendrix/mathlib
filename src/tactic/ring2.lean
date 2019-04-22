@@ -9,6 +9,9 @@ reflection instead of proof generation. Useful for kernel benchmarking.
 import tactic.ring data.num.lemmas
 import tactic.converter.interactive
 
+local attribute [instance, priority 0] pos_num_coe
+local attribute [instance, priority 0] num_nat_coe
+
 namespace tactic.ring2
 
 @[derive has_reflect]

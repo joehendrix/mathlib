@@ -10,6 +10,7 @@ import linear_algebra.finsupp field_theory.finite
 noncomputable theory
 
 local attribute [instance, priority 0] classical.prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
 
 open lattice set linear_map submodule
 

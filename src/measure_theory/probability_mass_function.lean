@@ -9,6 +9,7 @@ import topology.instances.nnreal topology.instances.ennreal topology.algebra.inf
 noncomputable theory
 variables {α : Type*} {β : Type*} {γ : Type*}
 local attribute [instance] classical.prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
 
 /-- Probability mass functions, i.e. discrete probability measures -/
 def {u} pmf (α : Type u) : Type u := { f : α → nnreal // has_sum f 1 }

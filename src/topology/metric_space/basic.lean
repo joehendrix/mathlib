@@ -13,6 +13,8 @@ import data.real.nnreal topology.metric_space.emetric_space topology.algebra.ord
 open lattice set filter classical topological_space
 noncomputable theory
 
+local attribute [instance, priority 0] nat.cast_coe
+
 local notation `𝓤` := uniformity
 
 universes u v w

@@ -12,6 +12,9 @@ import tactic.linarith
 open nat padic metric
 noncomputable theory
 local attribute [instance] classical.prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
 
 def padic_int (p : ℕ) [p.prime] := {x : ℚ_[p] // ∥x∥ ≤ 1}
 notation `ℤ_[`p`]` := padic_int p

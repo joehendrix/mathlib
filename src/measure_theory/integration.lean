@@ -15,6 +15,9 @@ import
 noncomputable theory
 open lattice set filter
 local attribute [instance] classical.prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
 
 section sequence_of_directed
 variables {α : Type*} {β : Type*} [encodable α] [inhabited α]

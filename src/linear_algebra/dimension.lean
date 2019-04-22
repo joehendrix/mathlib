@@ -10,6 +10,7 @@ import set_theory.ordinal
 noncomputable theory
 
 local attribute [instance, priority 0] classical.prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
 
 universes u v w
 variables {α : Type u} {β γ δ ε : Type v}

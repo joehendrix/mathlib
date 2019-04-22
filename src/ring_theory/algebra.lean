@@ -11,6 +11,8 @@ import data.complex.basic
 import linear_algebra.tensor_product
 import ring_theory.subring
 
+local attribute [instance, priority 0] int.cast_coe
+
 universes u v w u₁ v₁
 
 open lattice

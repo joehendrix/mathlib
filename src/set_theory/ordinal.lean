@@ -10,6 +10,8 @@ Ordinals are defined as equivalences of well-ordered sets by order isomorphism.
 import order.order_iso set_theory.cardinal data.sum
 noncomputable theory
 
+local attribute [instance, priority 0] nat.cast_coe
+
 open function cardinal
 local attribute [instance] classical.prop_decidable
 

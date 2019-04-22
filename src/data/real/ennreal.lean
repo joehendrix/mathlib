@@ -10,6 +10,9 @@ noncomputable theory
 open classical set lattice
 
 local attribute [instance] prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
+
 variables {α : Type*} {β : Type*}
 
 /-- The extended nonnegative real numbers. This is usually denoted [0, ∞],

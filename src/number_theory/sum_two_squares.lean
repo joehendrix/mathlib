@@ -11,6 +11,8 @@ import data.zsqrtd.gaussian_int data.zmod.quadratic_reciprocity ring_theory.prin
 
 open gaussian_int principal_ideal_domain zsqrtd
 
+local attribute [instance, priority 0] nat.cast_coe
+
 local notation `ℤ[i]` := gaussian_int
 
 namespace nat

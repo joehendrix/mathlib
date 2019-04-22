@@ -7,6 +7,8 @@ import algebra.archimedean
 import data.nat.choose data.complex.basic
 import tactic.linarith
 
+local attribute [instance, priority 0] nat.cast_coe
+
 local attribute [instance, priority 0] classical.prop_decidable
 local notation `abs'` := _root_.abs
 open is_absolute_value

@@ -23,6 +23,9 @@ noncomputable theory
 
 open classical set lattice filter finset function
 local attribute [instance] prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
 
 universes u v w x
 

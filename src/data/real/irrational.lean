@@ -7,6 +7,10 @@ Irrationality of real numbers.
 -/
 import data.real.basic data.padics.padic_norm
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
+
 open rat real multiplicity
 
 def irrational (x : ℝ) := ¬ ∃ q : ℚ, x = q

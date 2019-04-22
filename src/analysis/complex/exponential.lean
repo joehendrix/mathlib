@@ -6,6 +6,9 @@ Authors: Chris Hughes, Abhimanyu Pallavi Sudhir, Jean Lo, Calle Sönne
 import topology.instances.complex tactic.linarith data.complex.exponential
       group_theory.quotient_group topology.metric_space.basic
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+
 open finset filter metric
 
 namespace complex

@@ -27,6 +27,9 @@ import logic.function topology.metric_space.basic topology.algebra.uniform_group
 noncomputable theory
 open classical set lattice filter topological_space metric
 local attribute [instance] prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
 
 universes u v w
 variables {α : Type u} {β : Type v} {γ : Type w}

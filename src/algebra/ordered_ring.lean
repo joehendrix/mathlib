@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Mario Carneiro
 -/
 import order.basic algebra.order algebra.ordered_group algebra.ring data.nat.cast
+local attribute [instance, priority 0] nat.cast_coe
 
 universe u
 variable {α : Type u}

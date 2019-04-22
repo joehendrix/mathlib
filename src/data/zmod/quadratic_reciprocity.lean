@@ -5,6 +5,9 @@ Authors: Chris Hughes
 -/
 import field_theory.finite data.zmod.basic algebra.pi_instances
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+
 open function finset nat finite_field zmodp
 
 namespace zmodp

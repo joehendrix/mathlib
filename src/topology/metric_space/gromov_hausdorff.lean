@@ -40,6 +40,7 @@ open sum (inl inr)
 set_option class.instance_max_depth 50
 
 local attribute [instance] metric_space_sum
+local attribute [instance, priority 0] nat.cast_coe
 
 
 namespace Gromov_Hausdorff

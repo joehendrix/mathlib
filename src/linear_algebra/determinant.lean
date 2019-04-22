@@ -6,6 +6,9 @@ Authors: Kenny Lau, Chris Hughes
 import data.matrix
 import group_theory.subgroup group_theory.perm.sign
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+
 universes u v
 open equiv equiv.perm finset function
 

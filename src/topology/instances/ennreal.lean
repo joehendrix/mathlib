@@ -9,6 +9,9 @@ import topology.instances.nnreal data.real.ennreal
 noncomputable theory
 open classical set lattice filter metric
 local attribute [instance] prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
+
 variables {α : Type*} {β : Type*} {γ : Type*}
 
 local notation `∞` := ennreal.infinity

@@ -7,6 +7,8 @@ Mostly based on Jeremy Avigad's choose file in lean 2
 import data.nat.basic data.nat.prime
 import algebra.big_operators
 
+local attribute [instance, priority 0] nat.cast_coe
+
 open nat
 
 lemma nat.prime.dvd_choose {p k : ℕ} (hk : 0 < k) (hkp : k < p) (hp : prime p) : p ∣ choose p k :=

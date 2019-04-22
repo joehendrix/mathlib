@@ -12,6 +12,7 @@ import data.set.finite data.quot logic.function set_theory.schroeder_bernstein
 
 open function lattice set
 local attribute [instance] classical.prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
 
 universes u v w x
 

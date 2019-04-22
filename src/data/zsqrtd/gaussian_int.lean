@@ -9,6 +9,8 @@ The gaussian integers ℤ[i].
 import data.zsqrtd.basic data.complex.basic algebra.euclidean_domain algebra.associated
 open zsqrtd complex
 
+local attribute [instance, priority 0] int.cast_coe
+
 @[reducible] def gaussian_int : Type := zsqrtd (-1)
 
 local notation `ℤ[i]` := gaussian_int

@@ -21,6 +21,8 @@ TODO:
 import topology.basic topology.metric_space.basic
 import analysis.specific_limits
 
+local attribute [instance, priority 0] nat.cast_coe
+
 open set filter
 
 variables {α : Type*} {β : Type*}

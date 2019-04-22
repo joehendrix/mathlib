@@ -5,6 +5,8 @@ Authors: Mario Carneiro
 -/
 import data.nat.prime data.nat.modeq data.zsqrtd.basic
 
+local attribute [instance, priority 0] nat.cast_coe
+
 namespace pell
 open nat
 

@@ -8,6 +8,8 @@ Some big operators for lists and finite sets.
 import data.list.basic data.list.perm data.finset
 import algebra.group algebra.ordered_group algebra.group_power
 
+local attribute [instance, priority 0] nat.cast_coe
+
 universes u v w
 variables {α : Type u} {β : Type v} {γ : Type w}
 

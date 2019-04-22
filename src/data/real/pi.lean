@@ -6,6 +6,8 @@ Authors: Floris van Doorn
 
 import analysis.complex.exponential
 
+local attribute [instance, priority 0] nat.cast_coe
+
 namespace real
 variable (x : ℝ)
 

@@ -1034,6 +1034,8 @@ let ⟨lb, Plb, al⟩ := exists_least_of_bdd Hbdd' Hinh' in
 section cast
 variables {α : Type*}
 
+local attribute [instance, priority 0] nat.cast_coe
+
 section
 variables [has_neg α] [has_zero α] [has_one α] [has_add α]
 
@@ -1042,7 +1044,8 @@ protected def cast : ℤ → α
 | (n : ℕ) := n
 | -[1+ n] := -(n+1)
 
-@[priority 0] instance cast_coe : has_coe ℤ α := ⟨int.cast⟩
+def cast_coe : has_coe ℤ α := ⟨int.cast⟩
+local attribute [instance, priority 0] cast_coe
 
 @[simp] theorem cast_zero : ((0 : ℤ) : α) = 0 := rfl
 
@@ -1055,6 +1058,7 @@ by simp
 @[simp] theorem cast_neg_succ_of_nat (n : ℕ) : (-[1+ n] : α) = -(n + 1) := rfl
 
 end
+local attribute [instance, priority 0] cast_coe
 
 @[simp] theorem cast_one [add_monoid α] [has_one α] [has_neg α] : ((1 : ℤ) : α) = 1 := nat.cast_one
 

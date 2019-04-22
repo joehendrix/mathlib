@@ -8,6 +8,9 @@ The perfect closure of a field.
 
 import algebra.char_p
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+
 universes u v
 
 /-- A perfect field is a field of characteristic p that has p-th root. -/

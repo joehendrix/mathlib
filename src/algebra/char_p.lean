@@ -9,6 +9,8 @@ Characteristic of semirings.
 import data.padics.padic_norm data.nat.choose data.fintype data.set
 import data.zmod.basic algebra.module
 
+local attribute [instance, priority 0] nat.cast_coe
+
 universes u v
 
 /-- The generator of the kernel of the unique homomorphism ℤ → α for a semiring α -/

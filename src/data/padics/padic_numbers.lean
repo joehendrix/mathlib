@@ -11,6 +11,9 @@ import data.real.cau_seq_completion topology.metric_space.cau_seq_filter
 import data.padics.padic_norm algebra.archimedean analysis.normed_space.basic
 noncomputable theory
 local attribute [instance, priority 1] classical.prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
 
 open nat multiplicity padic_norm cau_seq cau_seq.completion metric
 

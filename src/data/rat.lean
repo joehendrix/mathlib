@@ -10,6 +10,9 @@ import
   data.nat.gcd data.pnat data.int.sqrt data.equiv.encodable order.basic
   algebra.ordered_field data.real.cau_seq
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+
 /- rational numbers -/
 
 /-- `rat`, or `ℚ`, is the type of rational numbers. It is defined
@@ -680,7 +683,8 @@ variables [division_ring α]
 protected def cast : ℚ → α
 | ⟨n, d, h, c⟩ := n / d
 
-@[priority 0] instance cast_coe : has_coe ℚ α := ⟨rat.cast⟩
+def cast_coe : has_coe ℚ α := ⟨rat.cast⟩
+local attribute [instance, priority 0] cast_coe
 
 @[simp] theorem cast_of_int (n : ℤ) : (of_int n : α) = n :=
 show (n / (1:ℕ) : α) = n, by rw [nat.cast_one, div_one]
@@ -836,6 +840,8 @@ eq_cast_of_ne_zero _ H1 Hadd Hmul _ $
   nat.cast_ne_zero.2 $ ne_of_gt n.pos
 
 end
+
+local attribute [instance, priority 0] cast_coe
 
 theorem cast_mk [discrete_field α] [char_zero α] (a b : ℤ) : ((a /. b) : α) = a / b :=
 if b0 : b = 0 then by simp [b0, div_zero]

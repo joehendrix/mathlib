@@ -7,6 +7,10 @@ The complex numbers, modelled as R^2 in the obvious way.
 -/
 import data.real.basic tactic.ring algebra.field_power
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
+
 structure complex : Type :=
 (re : ℝ) (im : ℝ)
 

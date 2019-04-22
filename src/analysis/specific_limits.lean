@@ -10,6 +10,7 @@ import topology.instances.ennreal
 
 noncomputable theory
 local attribute [instance] classical.prop_decidable
+local attribute [instance, priority 0] nat.cast_coe
 
 open classical function lattice filter finset metric
 

@@ -160,13 +160,17 @@ section
   | 0           := 0
   | (num.pos p) := cast_pos_num p
 
-  @[priority 0] instance pos_num_coe : has_coe pos_num α := ⟨cast_pos_num⟩
+  def pos_num_coe : has_coe pos_num α := ⟨cast_pos_num⟩
+  local attribute [instance, priority 0] pos_num_coe
 
-  @[priority 0] instance num_nat_coe : has_coe num α := ⟨cast_num⟩
+  def num_nat_coe : has_coe num α := ⟨cast_num⟩
+  local attribute [instance, priority 0] num_nat_coe
 
   instance : has_repr pos_num := ⟨λ n, repr (n : ℕ)⟩
   instance : has_repr num := ⟨λ n, repr (n : ℕ)⟩
 end
+
+local attribute [instance, priority 0] pos_num_coe
 
 namespace num
   open pos_num

@@ -8,6 +8,8 @@ Ordinal notations (constructive ordinal arithmetic for ordinals < ε₀).
 import set_theory.ordinal data.pnat
 open ordinal
 
+local attribute [instance, priority 0] nat.cast_coe
+
 local notation `ω` := omega.{0}
 
 /-- Recursive definition of an ordinal notation. `zero` denotes the

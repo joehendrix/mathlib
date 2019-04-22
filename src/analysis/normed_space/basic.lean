@@ -11,6 +11,10 @@ import linear_algebra.basic
 import topology.instances.nnreal topology.instances.complex
 variables {α : Type*} {β : Type*} {γ : Type*} {ι : Type*}
 
+local attribute [instance, priority 0] nat.cast_coe
+local attribute [instance, priority 0] int.cast_coe
+local attribute [instance, priority 0] rat.cast_coe
+
 noncomputable theory
 open filter metric
 local notation f `→_{`:50 a `}`:0 b := tendsto f (nhds a) (nhds b)
