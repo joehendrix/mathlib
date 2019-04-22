@@ -12,7 +12,7 @@ particular
 (*) define the operator norm and show that it induces the structure of a normed space
     on bounded linear maps.
 -/
-import algebra.module linear_algebra.basic
+import algebra.module
 import analysis.normed_space.bounded_linear_maps
 import topology.metric_space.lipschitz
 
@@ -219,4 +219,3 @@ theorem lipschitz : lipschitz_with ∥f∥ f :=
 end op_norm
 
 end bounded_linear_map
-
